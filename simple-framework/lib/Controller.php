@@ -1,6 +1,6 @@
 <?php
 class Controller {
-    private $layout = 'Knight';
+    private $layout = 'materialize';
     private $pageTitle = 'Title';
 
     public function __construct() {
@@ -15,7 +15,7 @@ class Controller {
         extract($params, EXTR_OVERWRITE);
         require $viewFilename;
         $actionOutput = ob_get_clean();
-        return $this->renderLayout($actionOutput);
+        echo $this->renderLayout($actionOutput);
     }
 
     public final function renderContent($viewName, $params = array()) {

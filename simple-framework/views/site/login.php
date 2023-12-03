@@ -2,7 +2,8 @@
 $this->pageTitle = $title;
 
 ?>
-<form class="login-form" method="post" action="<?php echo Ut::getBaseUrl('user/login'); ?>">
+<div class="container">
+<form class="login-form" method="post" action="<?php echo Url::getBaseUrl('user/login'); ?>">
     <div class="form-group">
         <label for="username">Username:</label>
         <input class="form-control" type="text" name="username" />
@@ -17,3 +18,4 @@ $this->pageTitle = $title;
         <input class="form-control btn btn-primary"  type="submit" value="Login" />
     </div>
 </form>
+</div>

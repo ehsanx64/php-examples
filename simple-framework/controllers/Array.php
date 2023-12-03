@@ -12,17 +12,6 @@ class ArrayController extends Controller {
 
 		p('The string: ' . $location);
 		$this->dumpMemory($location, strlen($location));
-//		putInteger(0, 1456788333);
-//		putInteger(4, 255);
-//		putInteger(8, 65535);
-
-//		echo microtime() . "\n";
-
-//		for ($i = 0; $i < 80000; $i += 4) {
-//			$this->putInteger($i, 0);
-//		}
-//		echo microtime() . "\n";
-//		$this->dumpMemory($location, 100);
     }
 
 	/**

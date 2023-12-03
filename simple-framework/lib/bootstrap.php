@@ -8,7 +8,7 @@ ini_set('display_errors', true);
 // Define some constants to make life easier
 define('DS', DIRECTORY_SEPARATOR);
 define('BASE_DIR', dirname(dirname(__FILE__)));
-define('BASE_URL', 'http://locdev:8104');
+define('BASE_URL', 'http://localhost:8080');
 define('CONFIG_DIR', BASE_DIR . DS . 'config');
 define('LIB_DIR', BASE_DIR . DS . 'lib');
 define('MODEL_DIR', BASE_DIR . DS . 'models');

@@ -16,7 +16,8 @@ class Database extends mysqli {
         );
     }
 
-    public function query($sql, $result_mode = null) {
+    public function query(string $query, int $result_mode = MYSQLI_STORE_RESULT)
+    : mysqli_result | bool {
         $result = $this->sqli->query($sql);
 
         if (!$result) {

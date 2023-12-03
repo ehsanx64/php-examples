@@ -11,8 +11,4 @@ class SiteController extends Controller {
     public function login() {
         echo $this->render('login', ['title' => 'Login']);
     }
-
-    public function chat() {
-        echo $this->render('chat', ['title' => 'Chat']);
-    }
 }
